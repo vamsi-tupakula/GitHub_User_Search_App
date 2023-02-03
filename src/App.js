@@ -6,7 +6,7 @@ function App() {
       <h1>GitHub User Search App</h1>
       <form action="#">
         <input type="text" />
-        <button type="submit">Search</button>
+        <button type="submit" onSubmit={console.log("searching..........")}>Search</button>
       </form>
     </div>
   );
