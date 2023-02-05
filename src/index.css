@@ -16,8 +16,8 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  /* background-color: #141d2f; */
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f6f8ff;
 }
