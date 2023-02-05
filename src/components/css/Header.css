@@ -1,0 +1,21 @@
+.container .header {
+  width: 100%;
+  height: 9%;
+  font-size: 1.8rem;
+  font-family: "Space Mono", monospace;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .header .name {
+  font-weight: bold;
+}
+
+.container .header .light_dark_change {
+  display: flex;
+  gap: 15px;
+  font-size: 1rem;
+  padding-right: 5px;
+}

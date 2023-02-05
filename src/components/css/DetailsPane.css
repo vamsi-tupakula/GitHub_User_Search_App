@@ -1,0 +1,5 @@
+.container .details_pane {
+  width: 100%;
+  height: calc(100% - 20% - 40px);
+  background-color: #1e2a47;
+}

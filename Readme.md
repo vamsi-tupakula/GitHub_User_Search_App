@@ -1,0 +1,2 @@
+# GitHub User Search App Solution || Frontend Mentor
+This is a solution for [Frontend Metor UI challenge | GitHub User Search App](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6)
