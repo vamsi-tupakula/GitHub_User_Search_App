@@ -1,8 +1,8 @@
 import './css/DetailsPane.css';
 
-function DetailsPane() {
+function DetailsPane(props) {
   return (
-    <div className="details_pane" id='user-details'>
+    <div className={`details_pane ${props.theme}`} id='user-details'>
 
     </div>
   );

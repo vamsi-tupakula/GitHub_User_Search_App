@@ -1,5 +1,14 @@
 .container .details_pane {
   width: 100%;
   height: calc(100% - 20% - 40px);
+}
+
+.container .details_pane.light {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #ececec;
+}
+
+.container .details_pane.dark {
   background-color: #1e2a47;
+  box-shadow: 0 0 5px #646464;
 }

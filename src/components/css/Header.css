@@ -12,6 +12,14 @@
   font-weight: bold;
 }
 
+.container .header.dark {
+  color: #ffffff;
+}
+
+.container .header.light {
+  color: #000000;
+}
+
 .container .header .light_dark_change {
   display: flex;
   gap: 15px;

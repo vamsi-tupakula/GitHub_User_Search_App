@@ -6,7 +6,7 @@ import './css/Header.css';
 function Header(props) {
 
   return (
-    <div className="header">
+    <div className={`header ${props.theme}`}>
       <p className="name">Vamsi Krishna</p>
       <div className="light_dark_change">
         <p>{(props.theme === 'light') ? 'DARK' : 'LIGHT'}</p>
