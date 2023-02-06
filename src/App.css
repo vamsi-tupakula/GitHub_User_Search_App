@@ -7,6 +7,6 @@
   flex-direction: column;
 }
 
-.container * {
+.container > * {
   border-radius: 12px;
 }

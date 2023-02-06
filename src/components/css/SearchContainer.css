@@ -3,6 +3,40 @@
   height: 11%;
 }
 
+.container .search_bar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.container .search_bar_container .searchIcon {
+  width: 40px;
+}
+
+.container .search_bar_container .searchBar {
+  height: 25px;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.container .search_bar_container .searchBtn {
+  width: 100px;
+  margin-left: 10px;
+  background: none;
+  cursor: pointer;
+  height: 42px;
+  background-color: #0079ff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
 .container .search_bar_container.light {
   background-color: #ffffff;
   box-shadow: 0 0 10px #ececec;
