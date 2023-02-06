@@ -8,7 +8,7 @@ function SearchContainer(props) {
             <div className="searchIcon">
                 <FontAwesomeIcon icon={faSearch} />
             </div>
-            <input className="searchBar" type="text" placeholder='Enter username....'/>
+            <input className="searchBar" type="text" placeholder='Enter username....' spellCheck='false' autoComplete='off' aria-autocomplete='none'/>
             <button className="searchBtn">Search</button>
         </div>
     );
