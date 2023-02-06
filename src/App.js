@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 function App() {
   const [theme, setTheme] = useState('light');
+  const [userName, setUserName] = useState('');
 
   const changeTheme = () => {
     if (theme === 'light') {
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="container">
       <Header theme={theme} changeTheme={changeTheme}/>
-      <SearchContainer theme={theme}/>
+      <SearchContainer theme={theme} userName={userName} setUserName={setUserName}/>
       <DetailsPane theme={theme}/>
     </div>
   );
