@@ -1,6 +1,9 @@
 .container .details_pane {
   width: 100%;
   height: calc(100% - 20% - 40px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .container .details_pane.light {
@@ -11,4 +14,13 @@
 .container .details_pane.dark {
   background-color: #1e2a47;
   box-shadow: 0 0 5px #646464;
+}
+
+.container .details_pane .githubImg {
+  height: 100%;
+  width: 160px;
+}
+
+.container .details_pane .githubLogo {
+  border-radius: 50%;
 }
