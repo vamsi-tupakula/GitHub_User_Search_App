@@ -10,3 +10,9 @@
 .container > * {
   border-radius: 12px;
 }
+
+@media (max-width: 750px) {
+  .container {
+    width: 360px;
+  }
+}

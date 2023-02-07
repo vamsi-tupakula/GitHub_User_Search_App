@@ -25,3 +25,9 @@
   font-size: 1rem;
   padding-right: 5px;
 }
+
+@media (max-width: 750px) {
+  .container .header {
+    font-size: 1rem;
+  }
+}
