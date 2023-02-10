@@ -2,7 +2,7 @@
   width: 100%;
   height: calc(100% - 20% - 40px);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 20px;
 }
 
@@ -23,4 +23,66 @@
 
 .container .details_pane .githubLogo {
   border-radius: 50%;
+}
+
+.container .details_pane .details {
+  width: 100%;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.container .details_pane .details.light {
+  color: #000000;
+}
+
+.container .details_pane .details.dark {
+  color: #ffffff;
+}
+
+.container .details_pane .details .details_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .details_pane .details .details_header .profile_name {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.container .details_pane .details .details_header .joinedDate {
+  color: #888888;
+}
+
+.container .details_pane .details .username {
+  color: #046fe5;
+}
+
+.container .details_pane .details .profile_bio {
+  margin: 20px 0;
+  color: #737a8c;
+}
+
+.container .details_pane .details .profile_info {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container .details_pane .details .profile_info .detail_heading {
+  color: #5775a2;
+  font-size: .9rem;
+}
+
+.container .details_pane .details .profile_info .detail_info {
+  font-size: 1.2rem;
+}
+
+.container .details_pane .details .profile_info.light {
+  background-color: #f6f8ff;
+}
+
+.container .details_pane .details .profile_info.dark {
+  background-color: #141c2f;
 }
