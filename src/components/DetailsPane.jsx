@@ -1,3 +1,5 @@
+import { faArrowCircleUp, faCompass, faLink, faLocationPinLock } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './css/DetailsPane.css';
 
 function DetailsPane(props) {
@@ -27,6 +29,24 @@ function DetailsPane(props) {
           <div className="following">
             <p className="detail_heading">Following</p>
             <p className="detail_info">13</p>
+          </div>
+        </div>
+        <div className="icons">
+          <div className="location box">
+            <FontAwesomeIcon icon={faLocationPinLock} />
+            <p>San Francisco</p>
+          </div>
+          <div className="location box">
+            <FontAwesomeIcon icon={faLink} />
+            <p>https://github.blog</p>
+          </div>
+          <div className="location box">
+            <FontAwesomeIcon icon={faArrowCircleUp} />
+            <p>Not available</p>
+          </div>
+          <div className="location box">
+            <FontAwesomeIcon icon={faCompass} />
+            <p>@github</p>
           </div>
         </div>
       </div>
