@@ -2,11 +2,26 @@ import "./App.css";
 import DetailsPane from "./components/DetailsPane";
 import Header from "./components/Header";
 import SearchContainer from "./components/SearchContainer";
-import { useState } from 'react';
+import Axios from 'axios';
+import { useEffect, useState } from 'react';
 
 function App() {
   const [theme, setTheme] = useState('light');
-  const [userName, setUserName] = useState('');
+  const [data, setData] = useState({});
+  const [userName, setUserName] = useState('octocat');
+
+   const fetchAPI = async () => {
+    var res = await Axios.get('https://api.github.com/users/' + userName);
+    setData(res.data);
+    console.log(res.data);
+   }
+
+   useEffect(() => {
+    Axios.get('https://api.github.com/users/' + userName).then(res => {
+      setData(res.data);
+      console.log(res.data);
+    })
+  }, []);
 
   const changeTheme = () => {
     if (theme === 'light') {
@@ -23,8 +38,8 @@ function App() {
   return (
     <div className="container">
       <Header theme={theme} changeTheme={changeTheme}/>
-      <SearchContainer theme={theme} userName={userName} setUserName={setUserName}/>
-      <DetailsPane theme={theme}/>
+      <SearchContainer theme={theme} userName={userName} setUserName={setUserName} fetchAPI={fetchAPI}/>
+      <DetailsPane theme={theme} data={data}/>
     </div>
   );
 }
